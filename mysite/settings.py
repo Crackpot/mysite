@@ -80,14 +80,22 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mysite_Django_3.2',
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': '172.11.0.5:1521/ORCLPDB1',
         'USER': 'mysite',
         'PASSWORD': 'mysite',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'mysite_Django_3.2',
+#         'USER': 'mysite',
+#         'PASSWORD': 'mysite',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
