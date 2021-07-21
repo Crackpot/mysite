@@ -29,3 +29,15 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+
+class Code(models.Model):
+    title = models.CharField('Title', max_length=50, unique=True)
+    code = models.TextField('Code')
+
+    class Meta:
+        db_table = 'code'
+        verbose_name = verbose_name_plural = 'Code'
+
+    def __unicode__(self):
+        return self.title
